@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFTs</title>
+    <link rel="icon" href="/assets/img/nft.png" />
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/cus.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="fixedNav"
+      class="bg-white dark:bg-[#001027] animate__animated w-full"
+    >
+      <div class="container mx-auto py-1 lg:px-20">
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div class="flex space-x-4 lg:space-x-5 items-center">
+            <p
+              class="font-bold text-[#52F859] text-sm lg:min-w-full lg:text-4xl lg:z-20"
+            >
+              NFTs
+            </p>
+          </div>
+          <!-- menu -->
+          <div
+            id="mobile"
+            class="lg:flex fixed lg:static top-0 h-screen lg:h-auto bg-white lg:bg-transparent -left-full w-full z-10 lg:z-0 flex justify-center items-center duration-500"
+          >
+            <div
+              id="menu-close"
+              class="lg:hidden top-0 absolute flex items-center justify-center right-0 border dark:border-red-500 border-black w-10 h-10 rounded-full mr-4 mt-3"
+            >
+              <i class="fa-solid fa-xmark text-2xl dark:text-red-500"></i>
+            </div>
+            <ul
+              class="flex lg:space-x-10 lg:flex-row flex-col space-y-10 lg:space-y-0 items-center lg:text-base text-xl text-black dark:text-red-500"
+            >
+              <a
+                href="#"
+                class="hover:text-slate-500 text-black font-semibold dark:text-white duration-500 cursor-pointer"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                class="hover:text-slate-500 text-black font-semibold dark:text-white duration-500 cursor-pointer"
+              >
+                Marketplace
+              </a>
+              <a
+                href="#"
+                class="hover:text-slate-500 text-black font-semibold dark:text-white duration-500 cursor-pointer"
+              >
+                Art
+              </a>
+              <a
+                href="#"
+                class="hover:text-slate-500 text-black font-semibold dark:text-white duration-500 cursor-pointer"
+              >
+                Artist
+              </a>
+            </ul>
+          </div>
+          <button
+            class="px-10 mr-1 border-2 dark:text-white border-[#FFC104] py-2 rounded-full hover:bg-yellow-500 duration-500 hover:text-white font-semibold"
+          >
+            Discover
+          </button>
+          <!-- dark-mode -->
+          <div class="flex items-center justify-center scale-50 md:scale-100">
+            <button
+              id="dark-switch"
+              onclick="toggleTheme()"
+              class="bg-black w-[40px]flex items-center transition duration-200 rounded-full m-1 dark:bg-slate-800 p-1"
+            >
+              <div
+                id="dark-switch-icon"
+                class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center"
+              >
+                <i class="fa-regular fa-sun"></i>
+              </div>
+              <h6
+                id="dark-text"
+                class="text-white translate-x-1 font-bold"
+              ></h6>
+            </button>
+            <div class="lg:hidden mobile-menu">
+              <i
+                class="fa-solid fa-bars text-black dark:text-red-500 ml-9 text-3xl"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section class="bg-white py-10 dark:bg-[#001027]">
+      <div class="container mx-auto lg:px-20">
+        <div class="grid grid-cols-2 mt-14 justify-between">
+          <div>
+            <h1 class="text-5xl dark:text-white">
+              Collect & Sell <br />
+              Digital Art
+            </h1>
+          </div>
+          <div>
+            <div class="grid grid-cols-3">
+              <div class="">
+                <h3 class="text-3xl text-[#52F859] font-semibold">100K+</h3>
+                <p class="text-base dark:text-white font-semibold">Customer</p>
+              </div>
+              <div class="">
+                <h3 class="text-3xl text-[#52F859] font-semibold">32M+</h3>
+                <p class="text-base dark:text-white font-semibold">Artist</p>
+              </div>
+              <div class="">
+                <h3 class="text-3xl text-[#52F859] font-semibold">50K+</h3>
+                <p class="text-base dark:text-white font-semibold">Owner</p>
+              </div>
+            </div>
+            <p class="font-semibold mt-3 dark:text-white">
+              NFT Ocean is a clean, professional and <br />
+              complete NFT marketplace
+            </p>
+            <div class="relative mt-3">
+              <div class="border-2 border-[#FFC104;] w-20 p-3 dark:border-white rounded-md">
+               <img src="/assets/img/lisa.png" alt="" class="w-12 h-12 text-center rounded-full object-cover">  
+              </div>
+               <img src="/assets/img/nft.png" alt="" class="w-12 h-12 rounded-full absolute top-0 left-[100px]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/js/cus.js"></script>
+  </body>
+</html>
